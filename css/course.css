@@ -1,0 +1,215 @@
+#root {
+  min-width: 1160px;
+}
+#root .header {
+  box-shadow: 1.5px 2.598px 9px 0 rgba(0, 0, 0, 0.054);
+}
+#root .header .const {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+}
+#root .header .const .head-left .title {
+  float: left;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+#root .header .const .head-left .title h2 {
+  font-size: 32px;
+  color: #15c288;
+  font-family: "华文琥珀", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+#root .header .const .head-left .title a {
+  font-size: 12px;
+}
+#root .header .const .head-left .nav {
+  float: left;
+}
+#root .header .const .head-left .nav .nav-list {
+  float: left;
+}
+#root .header .const .head-left .nav a {
+  padding: 30px 25px;
+  line-height: 78px;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+#root .header .const .head-right {
+  line-height: 78px;
+}
+#root .header .const .head-right .head-login {
+  float: right;
+}
+#root .header .const .head-right .head-login .login-list {
+  float: left;
+}
+#root .header .const .head-right .head-login a {
+  padding: 0 10px !important;
+  color: #15c288;
+}
+#root .header .const .head-right .search-form {
+  float: right;
+  margin-top: 22px;
+}
+#root .header .const .head-right .search-form .search {
+  line-height: 35px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+#root .header .const .head-right .search-form .search .search-int {
+  outline: none;
+  width: 115px;
+  height: 35px;
+  line-height: 35px;
+  border: 0;
+  margin: 0;
+  padding: 0 0 0 15px;
+  color: #616161;
+  font-size: 12px;
+}
+#root .header .const .head-right .search-form .search .search-btn {
+  float: right;
+  margin-right: 25px;
+}
+#root .header .const .head-right .search-form .search .search-btn i {
+  cursor: pointer;
+  color: #15c288;
+}
+#root .container {
+  margin: 30px auto;
+  min-height: 400px;
+  width: 1200px;
+}
+#root .container .tab-head {
+  display: flex;
+  border: 1px solid #f0f0f0;
+  border-width: 1px 0;
+  background: #f9f9f9;
+  font-size: 16px;
+  color: #444;
+}
+#root .container .tab-head li {
+  width: 10%;
+  text-align: center;
+}
+#root .container .tab-head li a {
+  display: block;
+  color: #5c5c5c;
+  padding: 22px 0;
+}
+#root .container .tab-head .act {
+  border-top: 2px solid #15c288;
+  border-right: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  background: #fff;
+}
+#root .container .content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 20px;
+}
+#root .container .content .contentleft {
+  width: 900px;
+}
+#root .container .content .contentleft .tab-menu {
+  display: flex;
+  background: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+#root .container .content .contentleft .tab-menu .act {
+  background: #fff;
+  color: #15c288;
+}
+#root .container .content .contentleft .tab-menu a {
+  color: #5c5c5c;
+  display: block;
+  padding: 13px 25px;
+}
+#root .container .content .contentleft .courselist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#root .container .content .contentright {
+  width: 270px;
+  border: 1px solid #f0f0f0;
+  background: #f9f9f9;
+  padding: 13px;
+}
+#root .container .content .contentright h3 {
+  height: 30px;
+  line-height: 30px;
+  margin: 0 0 13px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+#root .container .content .contentright .item {
+  width: 100%;
+}
+#root .container .content .contentright .item .courseimg {
+  position: relative;
+}
+#root .container .content .contentright .item .courseimg .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 50px;
+  color: #fff;
+  padding: 5px 0 0 6px;
+  overflow: hidden;
+}
+#root .container .content .contentright .item .courseimg .tag span {
+  position: relative;
+  z-index: 2;
+  top: 5px;
+}
+#root .container .content .contentright .item .courseimg .tag:after {
+  content: '';
+  display: inline-block;
+  border: 8px solid transparent;
+  position: absolute;
+  border-width: 50px;
+  border-left: 70px solid #12c888;
+  left: 0;
+  top: -50px;
+}
+#root .container .content .courseitem {
+  margin-bottom: 15px;
+  width: 285px;
+}
+#root .container .content .courseitem img {
+  width: 100%;
+}
+#root .container .content .courseitem .courseinfo {
+  padding: 12px 5px;
+}
+#root .container .content .courseitem .courseinfo h4 {
+  height: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#root .container .content .courseitem .courseinfo .metas {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #c6d0d8;
+}
+#root .container .content .courseitem .courseinfo .teacher {
+  position: relative;
+}
+#root .container .content .courseitem .courseinfo .teacher span {
+  float: right;
+  color: #15c288;
+}
+a:hover {
+  color: #15c288;
+}

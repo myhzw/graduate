@@ -1,0 +1,295 @@
+#root {
+  min-width: 1160px;
+}
+#root .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+}
+#root .header .head-left .title {
+  float: left;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+#root .header .head-left .title h2 {
+  font-size: 32px;
+  color: #15c288;
+  font-family: "华文琥珀", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+#root .header .head-left .title a {
+  font-size: 12px;
+}
+#root .header .head-left .nav {
+  float: left;
+}
+#root .header .head-left .nav .nav-list {
+  float: left;
+}
+#root .header .head-left .nav a {
+  padding: 30px 25px;
+  line-height: 78px;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+#root .header .head-right {
+  line-height: 78px;
+}
+#root .header .head-right .head-login {
+  float: right;
+}
+#root .header .head-right .head-login .login-list {
+  float: left;
+}
+#root .header .head-right .head-login a {
+  padding: 0 10px !important;
+  color: #15c288;
+}
+#root .header .head-right .search-form {
+  float: right;
+  margin-top: 22px;
+}
+#root .header .head-right .search-form .search {
+  line-height: 35px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+#root .header .head-right .search-form .search .search-int {
+  width: 115px;
+  height: 35px;
+  line-height: 35px;
+  border: 0;
+  margin: 0;
+  padding: 0 0 0 15px;
+  color: #616161;
+  font-size: 12px;
+}
+#root .header .head-right .search-form .search .search-btn {
+  float: right;
+  margin-right: 25px;
+}
+#root .header .head-right .search-form .search .search-btn i {
+  cursor: pointer;
+  color: #15c288;
+}
+#root .banner {
+  position: relative;
+  background: #fff;
+  margin: 0 auto;
+  max-height: 600px;
+}
+#root .banner .swiper-button {
+  position: absolute;
+  width: 1200px;
+  top: 50%;
+  left: 50%;
+  margin-left: -580px;
+  margin-top: -43px;
+  font-size: 70px;
+  color: #fff;
+  cursor: pointer;
+}
+#root .banner .swiper-button .ret {
+  float: right;
+}
+#root .banner .swiper-container {
+  margin: 0 auto;
+  height: 420px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#root .banner .swiper-container .swiper-wrapper {
+  background-color: #000;
+  width: 100%;
+  height: 420px;
+}
+#root .banner .swiper-container .swiper-wrapper .swiper-slide {
+  position: absolute;
+  width: 100%;
+  height: 420px;
+  background: no-repeat center;
+}
+#root .banner .swiper-pager {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  margin-left: -100px;
+  font-size: 0;
+}
+#root .banner .swiper-pager .swiper-pager-switch {
+  margin: 0 10px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+#root .banner .swiper-pager .switch {
+  background-color: #fff;
+}
+#root .container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+#root .container .choice {
+  width: 100%;
+  margin-bottom: 55px;
+}
+#root .container .choice h2 {
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+#root .container .choice .course {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+#root .container .choice .course .courseLeft {
+  position: relative;
+  width: 600px;
+  height: 352px;
+}
+#root .container .choice .course .courseLeft img {
+  width: 600px;
+  height: 352px;
+}
+#root .container .choice .course .courseRight {
+  position: relative;
+  width: 600px;
+  height: 352px;
+  background-color: #f4f4f4;
+  border: 1px solid #eee;
+  border-left: 0;
+  cursor: pointer;
+}
+#root .container .choice .course .courseRight .time-axis {
+  position: absolute;
+  border-left: 2px dotted #e8e8e8;
+  height: 100%;
+  left: 43px;
+  z-index: 1;
+}
+#root .container .choice .course .courseRight .course-item {
+  position: relative;
+  color: #333;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 90px;
+  font-size: 16px;
+}
+#root .container .choice .course .courseRight .course-item span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+#root .container .choice .course .courseRight .course-item .item-point {
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  z-index: 2;
+}
+#root .container .choice .course .courseRight .course-item .pointactive {
+  background-color: #23b8ff;
+  border-color: #23b8ff;
+}
+#root .container .choice .course .courseRight .courseactive {
+  color: #23b8ff;
+  background-color: #fff;
+}
+#root .container .choice .course .courseRight .courseactive:after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #23b8ff;
+  left: 0;
+  top: 0;
+}
+#root .container .coursetype {
+  width: 100%;
+}
+#root .container .coursetype .type {
+  margin-bottom: 55px;
+}
+#root .container .coursetype .type h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+#root .container .coursetype .type .custom {
+  min-height: 231px;
+  margin-top: 13px;
+}
+#root .container .coursetype .type .custom .list-card {
+  display: flex;
+  margin-left: -25px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+#root .container .coursetype .type .custom .list-card .item-card {
+  margin-left: 25px;
+  margin-top: 20px;
+  width: 220px;
+}
+#root .container .coursetype .type .custom .list-card .item-card a {
+  display: block;
+  margin-bottom: 6px;
+}
+#root .container .coursetype .type .custom .list-card .item-card a img {
+  width: 220px;
+  height: 124px;
+  cursor: pointer;
+}
+#root .container .coursetype .type .custom .list-card .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  height: 40px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+#root .container .coursetype .type .custom .list-card .title a {
+  color: #333;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+#root .container .coursetype .type .custom .list-card .item-line {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+#root .container .coursetype .type .custom .list-card .item-line .item-price {
+  color: #5fb41b;
+}
+#root .container .coursetype .type .custom .list-card .item-line .item-source {
+  float: right;
+  color: #999;
+}
+#root .container .coursetype .type .custom .list-card a:hover {
+  color: #62b4f7;
+}
+a {
+  color: #999;
+}
+.fade-enter-active,
+.fade-leave-active {
+  filter: opacity(100%);
+  transition: all 2s;
+}
+.fade-enter,
+.fade-leave-to {
+  filter: opacity(0%);
+}

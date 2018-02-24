@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/vue.min.js"></script>
+    <link rel="stylesheet" href="icon/iview.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/iview.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+    <title>谦学网-敏而好学，谦而好问</title>
+</head>
+<body>
+    <div id="root">
+        <div class="header">
+            <div class="head-left">
+                <div class="title">
+                    <h2>{{learndata.head.title}}</h2>
+                    <a href="javascript:void(0)">{{learndata.head.url}}</a>
+                </div>
+                <div class="nav">
+                    <div class="nav-list" v-for="topic in learndata.head.topic">
+                        <a href="javascript:void(0)">{{topic.top}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head-right">
+                <div class="head-login">
+                    <div class="login-list">
+                        <a href="javascript:void(0)">登录</a>
+                    </div>
+                    <div class="login-list">
+                        <a href="javascript:void(0)">注册</a>
+                    </div>
+                </div>
+                <form class="search-form" action="">
+                    <div class="search">
+                        <input class="search-int" autocomplete="off" placeholder="输入要查找的内容" type="text">
+                        <div class="search-btn">
+                            <i class="search-icon fa fa-search"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="swiper-container" @mouseenter="stoptimer" @mouseleave="starttimer">
+                <div class="swiper-wrapper">
+                    <transition-group
+                            name="fade"
+                            tag="ul"
+                    >
+                        <li class="swiper-slide" v-for="(imgurl,index) in learndata.banner.imagesurl"  :key="index"  v-if="index===inx"
+                            :style="{backgroundImage:'url('+imgurl.imgurl+')'}">
+                        </li>
+                    </transition-group>
+                </div>
+                <div class="swiper-button">
+                    <i class="ivu-icon ivu-icon-chevron-left" @click="btnLeft"></i>
+                    <i class="ivu-icon ivu-icon-chevron-right ret" @click="btnRight"></i>
+                </div>
+                <div class="swiper-pager">
+                    <span class="swiper-pager-switch" @click="switcsh(index)" v-for="(imgurl,index) in learndata.banner.imagesurl" :key="index" :class="{switch:index===inx}"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="choice">
+                <h2>精选好课</h2>
+                <div class="course">
+                    <div class="courseLeft" v-for="(images,index) in learndata.container.choice.imagesurl" :key="index" v-if="index===choiceinx">
+                        <img :src="images.imgurl" alt="">
+                    </div>
+                    <div class="courseRight">
+                        <div class="time-axis"></div>
+                        <transition-group
+                                name="slipeactive"
+                                tag="ul"
+                        >
+                            <li @mouseenter="slide(index)" :class="{courseactive:index===courinx}" class="course-item" v-for="(course,index) in learndata.container.choice.course" :key="index">
+                                <span >{{course.title}}</span>
+                                <div :class="{pointactive:index===courinx}" class="item-point"></div>
+                            </li>
+                        </transition-group>
+                    </div>
+                </div>
+            </div>
+            <div class="coursetype">
+                <div class="type" v-for="type in learndata.container.coursetype.type">
+                    <h2>{{type.typ}}</h2>
+                    <div class="custom">
+                        <ul class="list-card">
+                            <li class="item-card" v-for="content in type.content">
+                                <a href="javascript:void(0)">
+                                    <img :src="content.imgurl" alt="">
+                                </a>
+                                <h4 class="title"><a href="javascript:void(0)">{{content.title}}</a></h4>
+                                <div class="item-line">
+                                    <span class="item-price">{{content.price}}</span>
+                                    <span class="item-source">
+                <a href="javascript:void(0)">{{content.presenter}}</a>
+              </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

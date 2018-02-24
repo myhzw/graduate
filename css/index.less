@@ -1,0 +1,296 @@
+#root{
+  min-width: 1160px;
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+    .head-left{
+      .title{
+        float: left;
+        margin: 15px 0;
+        padding: 0 15px;
+        h2{
+          font-size: 32px;
+          color: #15c288;
+          font-family: "华文琥珀", Helvetica, Arial, sans-serif;
+          font-weight: bold;
+        }
+        a{
+          font-size: 12px;
+        }
+      }
+      .nav{
+        float: left;
+        .nav-list{
+          float: left;
+        }
+        a{
+          padding: 30px 25px;
+          line-height: 78px;
+          font-size: 14px;
+          color: #5c5c5c;
+        }
+      }
+    }
+    .head-right{
+      line-height: 78px;
+      .head-login{
+        float: right;
+        .login-list{
+          float: left;
+        }
+        a{
+          padding: 0 10px !important;
+          color: #15c288;
+        }
+      }
+      .search-form{
+        float: right;
+        margin-top: 22px;
+        .search{
+          line-height: 35px;
+          border-left: 1px solid #f0f0f0;
+          border-right: 1px solid #f0f0f0;
+          .search-int{
+            width: 115px;
+            height: 35px;
+            line-height: 35px;
+            border: 0;
+            margin: 0;
+            padding: 0 0 0 15px;
+            color: #616161;
+            font-size: 12px;
+          }
+          .search-btn{
+            float: right;
+            margin-right: 25px;
+            i{
+              cursor: pointer;
+              color: #15c288;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner{
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    max-height: 600px;
+    .swiper-button{
+      position: absolute;
+      width: 1200px;
+      top: 50%;
+      left: 50%;
+      margin-left: -580px;
+      margin-top: -43px;
+      font-size: 70px;
+      color: #fff;
+      cursor: pointer;
+      .ret{
+        float: right;
+      }
+    }
+    .swiper-container{
+      margin: 0 auto;
+      height: 420px;
+      overflow: hidden;
+      cursor: pointer;
+      .swiper-wrapper{
+        background-color: #000;
+        width: 100%;
+        height: 420px;
+        .swiper-slide{
+          position: absolute;
+          width: 100%;
+          height: 420px;
+          background: no-repeat center;
+        }
+      }
+    }
+    .swiper-pager{
+      position: absolute;
+      left: 50%;
+      bottom: 15px;
+      margin-left: -100px;
+      font-size: 0;
+      .swiper-pager-switch{
+        margin: 0 10px;
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid #fff;
+      }
+      .switch{
+        background-color: #fff;
+      }
+    }
+  }
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 55px;
+    .choice{
+      width: 100%;
+      margin-bottom: 55px;
+      h2{
+        color: #000;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .course{
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        .courseLeft{
+          position: relative;
+          width: 600px;
+          height: 352px;
+          img{
+            width: 600px;
+            height: 352px;
+          }
+        }
+        .courseRight{
+          position: relative;
+          width: 600px;
+          height: 352px;
+          background-color: #f4f4f4;
+          border: 1px solid #eee;
+          border-left: 0;
+          cursor: pointer;
+          .time-axis{
+            position: absolute;
+            border-left: 2px dotted #e8e8e8;
+            height: 100%;
+            left: 43px;
+            z-index: 1;
+          }
+          .course-item{
+            position: relative;
+            color: #333;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 90px;
+            font-size: 16px;
+            span{
+              display: block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              word-wrap: normal;
+            }
+            .item-point{
+              width: 6px;
+              height: 6px;
+              background: #ccc;
+              border: 1px solid #ccc;
+              border-radius: 100%;
+              position: absolute;
+              left: 40px;
+              top: 20px;
+              z-index: 2;
+            }
+            .pointactive{
+              background-color: #23b8ff;
+              border-color: #23b8ff;
+            }
+          }
+          .courseactive{
+            color: #23b8ff;
+            background-color: #fff;
+          }
+          .courseactive:after{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            background-color: #23b8ff;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+    .coursetype{
+      width: 100%;
+      .type{
+        margin-bottom: 55px;
+        h2{
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+        }
+        .custom{
+          min-height: 231px;
+          margin-top: 13px;
+          .list-card{
+            display: flex;
+            margin-left: -25px;
+            flex-wrap:  wrap;
+            font-size: 14px;
+            .item-card{
+              margin-left: 25px;
+              margin-top: 20px;
+              width: 220px;
+              a{
+                display: block;
+                margin-bottom: 6px;
+                img{
+                  width: 220px;
+                  height: 124px;
+                  cursor: pointer;
+                }
+              }
+            }
+            .title{
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              height: 40px;
+              font-size: 14px;
+              margin-bottom: 8px;
+              line-height: 1.5;
+              a{
+                color: #333;
+                word-wrap: break-word;
+                white-space: pre-wrap;
+              }
+            }
+            .item-line{
+              height: 24px;
+              line-height: 24px;
+              font-size: 12px;
+              .item-price{
+                color: #5fb41b;
+              }
+              .item-source{
+                float: right;
+                color: #999;
+              }
+            }
+            a:hover{
+              color: #62b4f7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+a{
+  color: #999;
+}
+.fade-enter-active,.fade-leave-active{
+  filter: opacity(100%);
+  transition: all 2s;
+}
+.fade-enter,.fade-leave-to/* .fade-leave-active below version 2.1.8 */
+{
+  filter: opacity(0%);
+}

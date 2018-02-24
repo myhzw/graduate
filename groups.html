@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/vue.min.js"></script>
+    <link rel="stylesheet" href="icon/iview.css">
+    <link rel="stylesheet" href="css/course.css">
+    <script src="js/iview.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/course.js"></script>
+    <title>小组 - 谦知网</title>
+</head>
+<body>
+    <div id="root">
+        <div class="header">
+            <div class="const">
+                <div class="head-left">
+                    <div class="title">
+                        <h2>{{learndata.head.title}}</h2>
+                        <a href="javascript:void(0)">{{learndata.head.url}}</a>
+                    </div>
+                    <div class="nav">
+                        <div class="nav-list" v-for="topic in learndata.head.topic">
+                            <a href="javascript:void(0)">{{topic.top}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-right">
+                    <div class="head-login">
+                        <div class="login-list">
+                            <a href="javascript:void(0)">登录</a>
+                        </div>
+                        <div class="login-list">
+                            <a href="javascript:void(0)">注册</a>
+                        </div>
+                    </div>
+                    <form class="search-form" action="">
+                        <div class="search">
+                            <input class="search-int" autocomplete="off" placeholder="输入要查找的内容" type="text">
+                            <div class="search-btn">
+                                <i class="search-icon fa fa-search"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
