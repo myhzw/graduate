@@ -1,8 +1,12 @@
 <template>
     <div class="theme-right">
       <div class="theme-search">
-       <Input placeholder="话题搜索" />
-      </div>
+        <Input placeholder="搜索热门话题">
+          <span class="search-append" slot="append">
+            <Icon type="ios-search-strong"></Icon>
+          </span>
+        </Input>
+       </div>
     </div>
 </template>
 
