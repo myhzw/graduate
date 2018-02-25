@@ -52,12 +52,12 @@
           .item-card
             margin-left 25px
             margin-top 20px
-            width 220px
+            width 190px
             a
               display: block;
               margin-bottom: 6px;
               img
-                width 220px
+                width 190px
                 height 124px
                 cursor pointer
           .title

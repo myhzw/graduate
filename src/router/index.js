@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '@/components/index/index';
+
 import Course from '@/components/course/course';
 import Theme from '@/components/theme/theme';
 import Class from '@/components/class/class';

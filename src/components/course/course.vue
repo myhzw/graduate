@@ -110,7 +110,7 @@
   .course
     margin 30px auto
     min-height 400px
-    width 1200px
+    width 1060px
     .content
       display flex
       justify-content space-between

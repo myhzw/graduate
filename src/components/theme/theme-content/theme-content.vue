@@ -44,7 +44,7 @@
 <style lang='stylus' rel="stylesheet/stylus">
   .theme-content
     background-color: #fff;
-    width 900px
+    width 800px
     .theme-nav
       display flex
       justify-content space-between

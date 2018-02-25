@@ -177,7 +177,7 @@
 
 <style lang='stylus' rel="stylesheet/stylus">
   .container
-    width 1200px
+    width 1060px
     margin 0 auto
     margin-top 55px
 </style>

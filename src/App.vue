@@ -15,7 +15,7 @@
           title: '谦学',
           url: 'qianxue.com',
           topic: [
-            {top: '学习中心', url: '/study'},
+            {top: '个人主页', url: '/person'},
             {top: '课程', url: '/course'},
             {top: '班级', url: '/class'},
             {top: '话题', url: '/theme'}
@@ -31,8 +31,6 @@
 
 <style lang='stylus' rel="stylesheet/stylus">
   #app
-    min-width 1160px
+    min-width 1060px
     font-size 14px
-  a:hover
-    color #15c288
 </style>
